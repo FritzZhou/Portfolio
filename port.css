@@ -1,227 +1,208 @@
-body {
-    background-image: url('rm183-wan-11.jpg');
-    padding: 0px;
-    margin: 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-img {
-  width: 600px;
-  height: 600px;
-  left: 15%;
-  top: 7%;
-  position: absolute;
-  border-radius: 20px;
-}
-
-.Introduce {
-    color: white;
-    position: absolute;
-    top: 25%;
-    right: 30%;
-    transform: translateY(50%);
-}
-
-.Intro {
-    color: white;
-    position: absolute;
-    top: 38%;
-    right: 14%;
-}
-
-.highlight {
-    color: hsl(120, 100%, 87%);
-}
-
-.about-btn {
-    width: 200px;
-    height: 35px;
-    border-radius: 50px;
-    color: white;
-    background-color: black;
-    right: 30.8%;
-    position: absolute;
-    top: 53%;
-    border: 1px solid;
-    box-shadow: 2px 2px 2px 2px rgb(203, 255, 203);
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vh;
-    cursor: pointer;
-}
-
-.about-btn:hover {
-    color: aquamarine;
-}
-
-.aboutme {
-    color: white;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    position: absolute;
-    top: 50%;
-    right: 6.2%;
-}
-
-.Fritz {
-    position: absolute;
-    color: white;
-    margin: 5px;
-    padding: 0.3em;
-    animation-name: slideLeft;   
-    animation-iteration-count: infinite;
-    animation-duration: 5s;
-    animation-direction: alternate;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-@keyframes slideLeft {
-    from{transform: translateX(50%);}
-}
-
-.Welcome {
-    text-align: center;
-    color: white;
-    margin: 5px;
-    padding: 0.3em;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    animation: fadeIn;
-    animation-duration: 5s;
-}
-
-@keyframes fadeIn {
-    from {opacity: 0;} 
-    to { opacity: 1;}
-}
-
-nav {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    padding: 10px;
-    background-color: black;
-}
-
-.navbar ul {
-    list-style-type: none;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
-    flex: 1;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+@keyframes lightSpeedInLeft
+ {
+  from{transform: translateX(50%)}
 }
 
 .navbar a {
-    text-decoration: none;
-    cursor: pointer;
-    color: white;
+  font-size: 2vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar a:hover {
-    color: rgb(110, 110, 110);
+  color: hsl(120, 100%, 87%);
 }
 
-.navbar li {
-    display: flex;
-    padding: 15px;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vh;
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  background: url('rm183-wan-11.jpg') no-repeat center center/cover;
+  position: relative;
+  min-height: 100vh;
+  
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);  
+  z-index: -1;
+}
+
+.Fritz {
+  flex-direction: unset;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  color: hsl(120, 100%, 87%);
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+.highlight {
+  color: hsl(120, 100%, 87%);
+}
+
+.navbar {
+  background-color: black;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-filler {
+  flex: 1;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem ;
+  text-align: center;
+  gap: 1.5rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  padding: 20px;
+  margin: 0px;
+  gap: 20px;
+  font-size: 2vh;
+  gap: 1.5rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.navbar li a:hover {
+  color: gray;
 }
 
 #open {
-    color: rgb(203, 255, 203);
+  color: rgb(203, 255, 203);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.image-section {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.text-section {
+  flex: 1 1 500px;
+  padding: 1rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+}
+
+.text-section h2 {
+  margin-bottom: 1rem;
+}
+
+.Welcome {
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+.Introduce {
+  font-size: 1.6rem;
+}
+
+.Intro {
+  font-size: 1.4rem;
+  color: #b7f8c9;
+}
+
+.aboutme {
+  margin-top: 1rem;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .social-links {
-  position: absolute;
-  top: 70%;
-  right: 31.5%;
-  transform: translate(50%, -50%);
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
 .social-links a {
   color: rgb(255, 64, 64);
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
 }
 
 .social-links a:hover {
   color: #007bff;
 }
 
-/* ========================= */
-/* ✅ Responsive Design CSS ✅ */
-/* ========================= */
-
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  .Fritz {
-    position: static;
-    text-align: center;
-    font-size: 5vw;
-    animation: none;
-  }
-
-  .Welcome {
-    font-size: 5vw;
-  }
-
-  .Introduce,
-  .Intro,
-  .aboutme {
-    position: static;
-    text-align: center;
-    margin: 20px auto;
-    font-size: 4vw;
-    transform: none;
-  }
-
-  img {
-    position: static;
-    display: block;
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-  }
-
-  nav.navbar ul {
+  .nav-content {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 1rem;
   }
 
-  .navbar li {
-    font-size: 3.5vw;
-    padding: 10px;
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .about-btn {
-    position: static;
-    display: block;
-    margin: 20px auto;
-    font-size: 2.5vw;
-    width: 70%;
+  .brand a {
+    font-size: 6vw;
   }
 
-  .social-links {
-    position: static;
-    margin: 30px auto;
-    justify-content: center;
-    transform: none;
-    flex-wrap: wrap;
-  }
-
-  .social-links a {
+  .nav-links li a {
     font-size: 4vw;
   }
 }
