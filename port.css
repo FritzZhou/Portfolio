@@ -17,6 +17,7 @@
   cursor: pointer;
   text-decoration: none;
   color: white;
+  border: none;
 }
 
 .navbar a:hover {
@@ -58,11 +59,13 @@ body::before {
 }
 
 .navbar {
-  background-color: black;
   padding: 1.5rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 0px solid;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px black;
 }
 
 .nav-filler {
@@ -224,6 +227,7 @@ body::before {
   transition: all 0.5s ease;
   opacity: 1;
   object-fit: cover;
+  padding: 0.6rem;
 }
 
 .myPics:hover {
@@ -231,31 +235,17 @@ body::before {
 }
 
 
-.overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the text */
-  font-size: 24px;
-  color: white;
-  opacity: 0; /* Initially invisible */
-  transition: opacity 0.3s ease; /* Smooth opacity transition */
-  text-align: center;
-}
-
-.myPics:hover .overlay {
-  opacity: 1;
-}
-
 .image-container {
   flex: 1 1 300px;
   text-align: center;
+  padding: 1px;
 }
 
 .image-container img {
   width: 100%;
   max-width: 300px;
   height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  border-radius: 40%;
+  box-shadow: 0 0 250px rgba(255, 255, 255, 0.2);
+  border: none;
 }
