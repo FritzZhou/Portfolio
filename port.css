@@ -136,16 +136,7 @@ body::before {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
-.text-section {
-  flex: 1 1 500px;
-  padding: 1rem;
-  animation: lightSpeedInLeft;
-  animation-duration: 1.5s;
-}
 
-.text-section h2 {
-  margin-bottom: 1rem;
-}
 
 .Welcome {
   font-size: 1.8rem;
@@ -205,4 +196,66 @@ body::before {
   .nav-links li a {
     font-size: 4vw;
   }
+}
+
+/*ABOUT ME*/
+
+.text-section {
+  flex: 1;
+  padding: 1rem;
+  animation: lightSpeedInLeft;
+  animation-duration: 1.5s;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#myName { font-size: 2vh;}
+#Lourdes {
+  color: pink;
+  font-size: 2vh;
+}
+
+
+#philip { color: blue;}
+#pines { color: red;}
+
+.myPics {
+  transition: all 0.5s ease;
+  opacity: 1;
+  object-fit: cover;
+}
+
+.myPics:hover {
+  opacity: 0.2;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the text */
+  font-size: 24px;
+  color: white;
+  opacity: 0; /* Initially invisible */
+  transition: opacity 0.3s ease; /* Smooth opacity transition */
+  text-align: center;
+}
+
+.myPics:hover .overlay {
+  opacity: 1;
+}
+
+.image-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
