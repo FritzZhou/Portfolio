@@ -2,8 +2,128 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Login*/
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+  list-style-position: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  padding: 25px; 
+}
+
+.nav li {
+  list-style-type: none;
   
 }
+.nav a {
+  text-decoration: none;
+  color: #5563DE;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 1000;
+  border: none;
+
+}
+
+.LoginBox {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+
+
+.form-group input {
+      width: 100%;
+      padding: 10px 10px 10px 5px;
+      border: none;
+      border-bottom: 2px solid #ccc;
+      background: transparent;
+      outline: none;
+      font-size: 16px;
+      color: white;
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+ .form-group label {
+      position: absolute;
+      top: 10px;
+      left: 5px;
+      color: #aaa;
+      font-size: 16px;
+      pointer-events: none;
+      transition: 0.2s ease all;
+    }
+
+.logInput {
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  border: 0px solid;
+  width: 350px;
+  height: 50px;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #aaa;
+  
+}
+.signInput {
+  border: none;
+  font-size: 2vh;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+  color: white;
+  font-weight: 1000;
+}
+
+.signInput:hover {
+  color: #5563DE;
+  
+}
+
+#loginAlert {
+  font-weight: 700;
+  color: rgb(255, 64, 64);
+  animation: heartbeat 1s infinite;
+}
+
+#loginAlert {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;   
+  margin-top: 15px;
+  text-align: center;
+}
+
+#loginAlert.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.form-group input:focus ~ label,
+    .form-group input:not(:placeholder-shown) ~ label {
+      top: -15px;
+      font-size: 12px;
+      color: #5563DE;
+    }
+
 
 @keyframes lightSpeedInLeft
  {
@@ -30,7 +150,6 @@ body {
   background: url('rm183-wan-11.jpg') no-repeat center center/cover;
   position: relative;
   min-height: 100vh;
-  
 }
 
 body::before {
@@ -49,13 +168,13 @@ body::before {
 
 .navbar .brand {
   font-weight: bold;
-  color: hsl(120, 100%, 87%);
+  color: #5563DE;
   padding-left: 1rem;
   font-size: 1.5rem;
 }
 
 .highlight {
-  color: hsl(120, 100%, 87%);
+  color: #5563DE;
 }
 
 .navbar {
@@ -65,7 +184,7 @@ body::before {
   align-items: center;
   border: 0px solid;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
 }
 
 .nav-filler {
@@ -103,7 +222,7 @@ body::before {
 }
 
 #open {
-  color: rgb(203, 255, 203);
+  color: #5563DE;
 }
 
 .content {
@@ -152,7 +271,7 @@ body::before {
 
 .Intro {
   font-size: 1.4rem;
-  color: #b7f8c9;
+  color: #5563DE;
 }
 
 .aboutme {
@@ -202,7 +321,6 @@ body::before {
 }
 
 /*ABOUT ME*/
-
 .text-section {
   flex: 1;
   padding: 1rem;
@@ -210,18 +328,18 @@ body::before {
   animation-duration: 1.5s;
   font-weight: 1000;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
-#myName { font-size: 2vh;}
+#myName {
+  font-size: 2vh;
+}
 #Lourdes {
   color: pink;
   font-size: 2vh;
 }
 
-
 #philip { color: blue;}
-#pines { color: red;}
+#pines {color: red;}
 
 .myPics {
   transition: all 0.5s ease;
@@ -234,7 +352,6 @@ body::before {
   opacity: 0.2;
 }
 
-
 .image-container {
   flex: 1 1 300px;
   text-align: center;
@@ -246,6 +363,7 @@ body::before {
   max-width: 300px;
   height: auto;
   border-radius: 40%;
-  box-shadow: 0 0 250px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 250px rgb(255, 255, 255, 0.2);
   border: none;
 }
+
