@@ -10,11 +10,7 @@ signBTN.onclick = function() {
     if (username.value === user && password.value === pass) {
         window.location.href = "Portfolio.html";
         loginAlert.text = "Login Successfully!";
-        loginAlert.classList.add("show");
-
-        setTimeout(() => {
-            loginAlert.classList.remove("show");
-        }, 3000);
+        
     } else {
         loginAlert.textContent = "Invalid Credential. Ask Fritz to Proceed!";
         loginAlert.classList.add("show");
@@ -23,4 +19,5 @@ signBTN.onclick = function() {
             loginAlert.classList.remove("show");
         }, 3000);
     }
+
 };
