@@ -8,7 +8,7 @@ signBTN.onclick = function() {
     let pass = "123";
 
     if (username.value === user && password.value === pass) {
-        window.location.href = "Portfolio.html";
+        window.location.href = "index.html";
         loginAlert.text = "Login Successfully!";
         
     } else {
@@ -21,3 +21,4 @@ signBTN.onclick = function() {
     }
 
 };
+
