@@ -8,7 +8,7 @@ signBTN.onclick = function() {
     let pass = "123";
 
     if (username.value === user && password.value === pass) {
-        window.location.href = "index.html";
+        window.location.href = "Home.html";
         loginAlert.text = "Login Successfully!";
         
     } else {
@@ -21,4 +21,5 @@ signBTN.onclick = function() {
     }
 
 };
+
 
