@@ -5,7 +5,7 @@ const loginAlert = document.getElementById("loginAlert");
 
 signBTN.onclick = function() {
     let user = "Fritz";
-    let pass = "123";
+    let pass = "00000111";
 
     if (username.value === user && password.value === pass) {
         window.location.href = "Home.html";
@@ -21,5 +21,6 @@ signBTN.onclick = function() {
     }
 
 };
+
 
 
