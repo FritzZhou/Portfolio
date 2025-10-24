@@ -367,3 +367,54 @@ body::before {
   border: none;
 }
 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.navbar .brand {
+  font-weight: bold;
+  color: #5563DE;
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: gray;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .navbar li a {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+}
